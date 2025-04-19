@@ -1,35 +1,48 @@
-# Numerical Analysis
+# 🧮 Numerical Analysis 
 
-This repository contains a collection of MATLAB scripts developed as part of a Numerical Analysis course. Each file demonstrates a specific numerical method used to approximate solutions to mathematical problems, such as finding roots, solving differential equations, and analyzing stability.
+This repository contains MATLAB implementations of classic numerical methods, developed as part of an undergraduate course in Numerical Analysis. The goal of these scripts is to demonstrate core computational techniques for solving mathematical problems, with a focus on approximation and iterative solutions.
+
+---
 
 ## 🧠 Topics Covered
-- **Root Finding Methods**
-  - `bisection_method.m` – Bisection Method
-  - `secant_method.m` – Secant Method
-  - `newton.m` – Newton’s Method
-  - `newtons.m` – Newton’s Method (variant)
-  - `fixed_point_iteration.m` – Fixed-Point Iteration
 
-- **ODE Solvers**
-  - `euler_method.m` – Euler’s Method
-  - `modified_euler_method.m` – Modified Euler’s Method
-  - `rk2.m` – Runge-Kutta 2nd Order Method
-  - `rk4.m` – Runge-Kutta 4th Order Method
-  - `leapfrog.m` – Leapfrog Method
-  - `EulerSystems.m` – System of ODEs
-  - `Midpoint.m` – Midpoint Method
+### 🔁 Root-Finding Methods
+- `bisection_method.m` – Bisection method for locating roots
+- `fixed_point_iteration.m` – Fixed-point iteration based on Burden & Faires
+- `secant_method.m` – Secant method for non-linear equations
+- `newton.m` – Newton’s method (single variable)
+- `newtons.m` – Newton’s method (system of nonlinear equations)
 
-- **Interpolation and Approximation**
-  - `newton_divided_difference.m` – Newton's Divided Differences
-  - `ls.m` – Least Squares Approximation
+### 📈 Interpolation & Polynomial Approximation
+- `newton_divided_difference.m` – Newton’s divided difference interpolation
+- `ls.m` – Least squares fitting for data approximation
 
-- **Systems of Equations**
-  - `gs.m` – Gauss-Seidel Method
-  - `sdm.m` – Steepest Descent Method
-  - `nls.m` – Nonlinear Least Squares
-  - `broyden.m` – Broyden’s Method
+### 📉 Numerical Differentiation & Integration
+- `fdm.m` – Finite difference method
+- `midpoint.m` – Midpoint rule for integration
+- `sdm.m` – Simpson’s method (composite)
 
-- **Stability and Visualization**
-  - `stability_regions_plot.m` – Stability Regions Visualization for ODE Solvers
-    
+### 🧩 Initial Value Problems (ODE Solvers)
+- `euler_method.m` – Standard Euler’s method
+- `modified_euler_method.m` – Improved Euler’s method (Heun’s method)
+- `rk2.m` – Second-order Runge-Kutta
+- `rk4.m` – Fourth-order Runge-Kutta
+- `leapfrog.m` – Leapfrog method for oscillatory systems
+
+### 🔁 Systems of Equations
+- `gs.m` – Gauss-Seidel method
+- `broydens.m` – Broyden’s method for nonlinear systems
+
+### 🧪 Stability & Systems
+- `stability_regions_plot.m` – Plotting stability regions of numerical methods
+- `EulerSystems.m` – Solving ODE systems using Euler’s method
+
 ---
+
+## 💻 Technologies
+- **MATLAB** (100%)
+
+---
+
+## ⚠️ Disclaimer  
+This repository is for **educational purposes** and does not include full validation or optimization for production-level code.
